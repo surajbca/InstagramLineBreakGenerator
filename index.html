@@ -9,39 +9,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./InstagramLineBreakGenerator/index.css">
     <script src="./InstagramLineBreakGenerator/copy.js"></script>
     <script src="./InstagramLineBreakGenerator/clear.js"></script>
     <script src="./InstagramLineBreakGenerator/StringLength.js"></script>
+    <script src="./InstagramLineBreakGenerator/fontfamily.js"></script>
 </head>
 
 <body>
-    <div style="margin-left: 20px; margin-right: 20px;">
+    <div style="background-color: rgb(36, 172, 172);">
         <div>
-            <h1 class="is-size-2">Instagram Line Break Generator</h1>
-        </div>
-        <div class="has-text-right">
-            <button class="button has-background-success has-text-white" onclick=" copyValue()">
-                <span class="icon">
-                    <i class="fa fa-clone" aria-hidden="true"></i>
-                </span>
-                <span>Copy to ClipBord</span>
-            </button>
+            <h1 class="is-size-2 has-text-centered has-text-white">INSTAGRAM TEXT SPACER!</h1>
         </div>
         <div>
-            <strong class="">Type your Status here:</strong>
-            <textarea class="textarea mt-2" rows="10" maxlength="2200" id="copyValue" oninput="length()"></textarea>
-            <div><strong id="stringLength">0</strong><strong>/2200 (max instagram caption size)</strong></div>
+            <p class="has-text-centered has-text-white mt-4">Create line breaks in your captions, bio, or comments!</p>
         </div>
-        <div class="has-text-right">
-            <button class="button" onclick="ClearValue()">
-                <span class="icon">
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                </span>
-                <span>Clear</span>
-            </button>
-
+        <div class="has-text-centered has-text-white icon-text mt-4 mb-5" id="textLength">
+            <span id="stringLength">0</span>
+            <span>/2200 </span>
         </div>
-
+        <div class="inputdiv">
+            <!--<strong class="">Type your Status here:</strong>-->
+            <textarea class="textarea mt-2" placeholder="Type or paste Your text here!" rows="10" maxlength="2200"
+                id="copyValue" oninput="length()"></textarea>
+        </div>
+        <div class="has-text-centered mt-5">
+            <button class="button is-primary has-text-white" onclick="bold()" style="font-weight: bold;">B</button>
+            <button class="button is-primary  has-text-white is-italic" onclick="italic()">I</button>
+            <button class="button is-primary  has-text-white" onclick="cursive()"
+                style="font-family: cursive;">C</button>
+            <button class="button is-primary  has-text-white" onclick="fantasy()"
+                style="font-family: fantasy;">F</button>
+        </div>
+        <div class="buttons  has-text-centered columns mt-5" id="buttonId">
+            <div class="column">
+                <button class="button is-primary has-text-centered is-fullwidth has-text-white" onclick="ClearValue()"
+                    style="font-family: d;">
+                    <span class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+                    <span>Clear</span>
+                </button>
+            </div>
+            <div class="column">
+                <button class="button is-primary has-text-white has-text-centered is-fullwidth" onclick=" copyValue()">
+                    <span class="icon">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                    </span>
+                    <span>Copy to ClipBord</span>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 

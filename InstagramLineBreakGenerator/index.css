@@ -9,6 +9,50 @@
 }
 #textLength{
    margin-left: 690px;
-       
-       
+            
 }
+/* start mobile mediaqueries*/
+@media screen and (max-width: 600px) {
+    #buttonId {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inputdiv {
+        margin-left: 40px;
+         margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #textLength {
+      margin-left: 150px;
+    }
+}
+
+/*end mobile  mediaqueries*/
+
+/*start tab  mediaqueries*/
+@media screen and (max-width: 992px) {
+    #buttonId {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .inputdiv {
+        margin-left: 40px;
+            margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #textLength {
+        margin-left: 150px;
+    }
+}
+
+/*end tab mediaqueries*/

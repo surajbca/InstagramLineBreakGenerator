@@ -5,7 +5,7 @@ function bold() {
 
 function italic() {
   let italic = document.getElementById("copyValue");
-  italic.style.fontStyle = "italic";
+  italic.style.fontStyle = "normal";
 }
 
 function cursive() {

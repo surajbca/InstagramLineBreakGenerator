@@ -1,4 +1,5 @@
 function ClearValue() {
+  alert("Are you sure you want to delete your text?");
   document.getElementById("copyValue").value = "";
 
   document.getElementById("stringLength").innerHTML = "0";

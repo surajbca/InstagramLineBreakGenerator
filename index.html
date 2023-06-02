@@ -31,15 +31,15 @@
         <div class="inputdiv">
             <!--<strong class="">Type your Status here:</strong>-->
             <textarea class="textarea mt-2" placeholder="Type or paste Your text here!" maxlength="2200" id="copyValue"
-                oninput="length()" rows="10" style="font-style: italic;"></textarea>
+                oninput="length()" rows="10"></textarea>
         </div>
         <div class="has-text-centered mt-5">
-            <button class="button is-primary has-text-white" onclick="bold()" style="font-weight: bold;">B</button>
-            <button class="button is-primary  has-text-white" onclick="italic()">N</button>
-            <button class="button is-primary  has-text-white" onclick="cursive()"
+            <button class="button is-primary has-text-white" onclick="boldText()" style="font-weight: bold;">B</button>
+            <button class="button is-primary  has-text-white is-italic" onclick="italicText()">I</button>
+            <button class="button is-primary  has-text-white" onclick="cursiveText()"
                 style="font-family: cursive;">C</button>
-            <button class="button is-primary  has-text-white" onclick="fantasy()"
-                style="font-family: fantasy;">F</button>
+            <button class="button is-primary  has-text-white" onclick="doublestruckText()"
+                style="text-decoration-style: double;">D</button>
         </div>
         <div class="buttons  has-text-centered columns mt-5" id="buttonId">
             <div class="column">

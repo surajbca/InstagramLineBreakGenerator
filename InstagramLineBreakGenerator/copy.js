@@ -1,7 +1,7 @@
 function copyValue() {
   let copyValue = document.getElementById("copyValue");
-  copyValue.select();
-  copyValue.setSelectionRange(0, 99999); // For mobile devices
+  //copyValue.select();
+  //copyValue.setSelectionRange(0, 99999); // For mobile devices
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyValue.value);
